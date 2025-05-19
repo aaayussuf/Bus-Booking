@@ -1,0 +1,80 @@
+.seatMapWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.seatMapTable {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.leftSide,
+.rightSide {
+  display: flex;
+  gap: 6px;
+  min-width: 100px;
+}
+
+.aisle {
+  width: 120px;
+  text-align: center;
+}
+
+.seatButton {
+  padding: 10px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.selected {
+  background-color: #007bff;
+  color: white;
+}
+
+.labelCell {
+  padding: 10px;
+  font-weight: bold;
+  color: #444;
+}
+
+.doorway {
+  font-size: 12px;
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  color: gray;
+}
+
+.legend {
+  margin-top: 20px;
+  display: flex;
+  gap: 15px;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.seatIcon {
+  width: 20px;
+  height: 20px;
+  border: 1px solid #444;
+  border-radius: 4px;
+}
+
+.available { background-color: #eee; }
+.selected { background-color: #007bff; }
+.occupied { background-color: #d9534f; }
+.vip { background-color: gold; }
+.business { background-color: #5bc0de; }

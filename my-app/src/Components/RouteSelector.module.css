@@ -1,0 +1,52 @@
+.routeSelectorContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 16px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.routeSelectorField {
+  flex: 1 1 45%;
+  min-width: 200px;
+  background-color: white;
+  border-radius: 4px;
+}
+
+.routeSelectorLabelOrigin {
+  color: #1976d2;
+  font-weight: 600;
+}
+
+.routeSelectorLabelDestination {
+  color: #d32f2f;
+  font-weight: 600;
+}
+
+.routeSelectorFieldOrigin .MuiOutlinedInput-root {
+  border-color: #1976d2;
+}
+
+.routeSelectorFieldOrigin .MuiOutlinedInput-root:hover fieldset {
+  border-color: #115293;
+}
+
+.routeSelectorFieldOrigin .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #0d3c61;
+}
+
+.routeSelectorFieldDestination .MuiOutlinedInput-root {
+  border-color: #d32f2f;
+}
+
+.routeSelectorFieldDestination .MuiOutlinedInput-root:hover fieldset {
+  border-color: #9a0007;
+}
+
+.routeSelectorFieldDestination .MuiOutlinedInput-root.Mui-focused fieldset {
+  border-color: #6b0004;
+}

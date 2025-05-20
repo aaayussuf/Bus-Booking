@@ -12,6 +12,8 @@ import NotFound from './pages/NotFound';
 import PrivateRoute from './Components/PrivateRoute';
 import ProfilePage from './pages/ProfilePage';
 import BookingHistoryPage from './pages/BookingHistoryPage';
+import Footer from './Components/Footer';
+import ContactPage from './pages/ContactPage';
 
 function App() {
   return (
@@ -22,6 +24,7 @@ function App() {
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<ContactPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/booking" element={<PrivateRoute><BookingPage /></PrivateRoute>} />
@@ -31,6 +34,7 @@ function App() {
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>
+        <Footer />
       </AuthProvider>
     </Router>
   );

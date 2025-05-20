@@ -16,64 +16,70 @@ const HomePage = () => {
   return (
     <Box
       sx={{
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        height: '100vh', // Revert to full viewport height
-        width: '100vw',
+        display: 'flex',
+        flexDirection: 'column',
+        minHeight: '100vh',
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'flex-end', // Align content to the right
-        justifyContent: 'flex-end', // Align content to the bottom
         color: 'white',
-        textAlign: 'right', // Align text to the right
-        margin: 0, // Remove any default margin
-        padding: 0, // Remove unnecessary padding
-        overflow: 'hidden', // Prevent overflow that might cause a white screen
-        paddingTop: '64px', // Add padding to push content below navbar
+        textAlign: 'right',
+        paddingTop: '64px', // push content below navbar
       }}
     >
-      <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', mb: 2 }}>
-        Welcome to <span style={{ color: '#FFD700' }}>Moyale Star</span>
-      </Typography>
-      <Typography
-        variant="h5"
-        gutterBottom
+      <Box
         sx={{
-          fontWeight: 'light',
-          lineHeight: 1.8,
-          maxWidth: '600px',
-          mb: 8,
+          flexGrow: 1,
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'flex-end',
+          justifyContent: 'flex-end',
+          paddingRight: 3,
+          paddingBottom: 2,
         }}
       >
-        Discover the joy of premium travel.  
-        <br />
-        <strong>Book Instantly.</strong> <span style={{ color: '#FFD700' }}>Travel Safely.</span> <strong>Arrive in Style.</strong>
-      </Typography>
-      <Button
-        variant="contained"
-        size="large"
-        color="success"
-        sx={{
-          mt: 4,
-          px: 5,
-          py: 1.5,
-          fontSize: '1.5rem', // Slightly larger font size for emphasis
-          fontWeight: 'bold',
-          borderRadius: '15px', // Rounded button for a modern look
-          position: 'relative',
-          bottom: '100px', // Position the button slightly above the bottom
-          right: '150px', // Position the button slightly to the left
-          textTransform: 'uppercase', // Make the text uppercase for impact
-        }}
-        onClick={handleBookNow}
-      >
-        Book
-      </Button>
+        <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', mb: 2 }}>
+          Welcome to <span style={{ color: '#FFD700' }}>Moyale Star</span>
+        </Typography>
+        <Typography
+          variant="h5"
+          gutterBottom
+          sx={{
+            fontWeight: 'light',
+            lineHeight: 1.8,
+            maxWidth: '600px',
+            mb: 8,
+          }}
+        >
+          Discover the joy of premium travel.  
+          <br />
+          <strong>Book Instantly.</strong> <span style={{ color: '#FFD700' }}>Travel Safely.</span> <strong>Arrive in Style.</strong>
+        </Typography>
+        <Button
+          variant="contained"
+          size="large"
+          color="success"
+          sx={{
+            mt: 3,
+            px: 5,
+            py: 1.5,
+            fontSize: '1.5rem',
+            fontWeight: 'bold',
+            borderRadius: '200px',
+            textTransform: 'uppercase',
+            marginRight: '150px',
+            marginLeft: 'auto',
+            marginBottom: '70px',
+            marginTop: '-50px',
+            paddingBottom: '10px',
+            paddingTop: '10px',
+          }}
+          onClick={handleBookNow}
+        >
+          Book
+        </Button>
+      </Box>
     </Box>
   );
 };

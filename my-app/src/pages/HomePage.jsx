@@ -16,7 +16,10 @@ const HomePage = () => {
   return (
     <Box
       sx={{
-        height: '100vh', // Ensures the Box occupies the full viewport height
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        height: '100vh', // Revert to full viewport height
         width: '100vw',
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: 'cover',
@@ -31,10 +34,10 @@ const HomePage = () => {
         margin: 0, // Remove any default margin
         padding: 0, // Remove unnecessary padding
         overflow: 'hidden', // Prevent overflow that might cause a white screen
-        paddingTop: '64px', // Adjust this value to match your navbar height
+        paddingTop: '64px', // Add padding to push content below navbar
       }}
     >
-      <Typography variant="h3" gutterBottom sx={{ fontWeight: 'bold', mb: 5 }}>
+      <Typography variant="h4" gutterBottom sx={{ fontWeight: 'bold', mb: 2 }}>
         Welcome to <span style={{ color: '#FFD700' }}>Moyale Star</span>
       </Typography>
       <Typography
@@ -63,7 +66,7 @@ const HomePage = () => {
           fontWeight: 'bold',
           borderRadius: '15px', // Rounded button for a modern look
           position: 'relative',
-          bottom: '50px', // Position the button slightly above the bottom
+          bottom: '100px', // Position the button slightly above the bottom
           right: '150px', // Position the button slightly to the left
           textTransform: 'uppercase', // Make the text uppercase for impact
         }}

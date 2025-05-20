@@ -39,10 +39,10 @@ const RegisterPage = () => {
   };
 
   return (
-    <Container maxWidth="sm">
+    <Container maxWidth="sm" sx={{ mt: 8, mb: 8, p: 4, boxShadow: '0 4px 12px rgba(0,0,0,0.1)', borderRadius: 2, backgroundColor: '#f9f9f9' }}>
       <Box sx={{ my: 4 }}>
-        <Typography variant="h4" gutterBottom>
-          Register
+        <Typography variant="h4" gutterBottom sx={{ color: '#2e7d32', fontWeight: 'bold', mb: 3 }}>
+          Create Your Account
         </Typography>
         {error && (
           <Typography color="error" gutterBottom>
@@ -97,14 +97,19 @@ const RegisterPage = () => {
             type="submit"
             variant="contained"
             fullWidth
-            sx={{ mt: 2 }}
+            sx={{ mt: 2, backgroundColor: '#2e7d32', '&:hover': { backgroundColor: '#1b4d24' } }}
           >
             Register
           </Button>
         </form>
         <Typography sx={{ mt: 2 }}>
           Already have an account?{' '}
-          <Button onClick={() => navigate('/login')}>Login here</Button>
+          <Button
+            onClick={() => navigate('/login')}
+            sx={{ color: '#2e7d32', fontWeight: 'bold', textTransform: 'none' }}
+          >
+            Login here
+          </Button>
         </Typography>
       </Box>
     </Container>

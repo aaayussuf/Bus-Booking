@@ -21,11 +21,16 @@ function Navbar() {
 
   const NavLink = styled(Link)({
     textDecoration: 'none',
-    color: 'inherit',
+    color: '#fff',
     fontWeight: 'bold',
     marginRight: '20px',
+    padding: '6px 12px',
+    borderRadius: '4px',
+    transition: 'background-color 0.3s, color 0.3s',
     '&:hover': {
-      color: '#FFD700',
+      color: '#2e7d32',
+      backgroundColor: '#FFD700',
+      textDecoration: 'none',
     },
   });
 
@@ -34,9 +39,10 @@ function Navbar() {
       <Toolbar sx={{ minHeight: '64px', px: 2 }}>
         <Box sx={{ display: 'flex', alignItems: 'center', flexGrow: 1 }}>
           <img src={Logo} alt="Bus Logo" style={{ height: '40px', marginRight: '12px' }} />
-          <Typography variant="h6" component={Link} to="/" sx={{ color: '#fff', fontWeight: 'bold', textDecoration: 'none' }}>
+          <Typography variant="h6" component={Link} to="/" sx={{ color: '#fff', fontWeight: 'bold', textDecoration: 'none', marginRight: 2 }}>
             Moyale Star
           </Typography>
+          <NavLink to="/">Home</NavLink>
         </Box>
         <Box>
           <NavLink to="/about">About Us</NavLink>
@@ -57,12 +63,8 @@ function Navbar() {
             </>
           ) : (
             <>
-              <Button color="inherit" component={Link} to="/login" sx={{ fontWeight: 'bold' }}>
-                Login
-              </Button>
-              <Button color="inherit" component={Link} to="/register" sx={{ fontWeight: 'bold', ml: 1 }}>
-                Register
-              </Button>
+              <NavLink to="/login">Login</NavLink>
+              <NavLink to="/register">Register</NavLink>
             </>
           )}
         </Box>

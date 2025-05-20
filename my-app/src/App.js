@@ -10,6 +10,8 @@ import BookingPage from './pages/BookingPage';
 import ConfirmationPage from './pages/ConfirmationPage';
 import NotFound from './pages/NotFound';
 import PrivateRoute from './Components/PrivateRoute';
+import ProfilePage from './pages/ProfilePage';
+import BookingHistoryPage from './pages/BookingHistoryPage';
 
 function App() {
   return (
@@ -24,6 +26,8 @@ function App() {
             <Route path="/register" element={<RegisterPage />} />
             <Route path="/booking" element={<PrivateRoute><BookingPage /></PrivateRoute>} />
             <Route path="/confirmation" element={<PrivateRoute><ConfirmationPage /></PrivateRoute>} />
+            <Route path="/profile" element={<PrivateRoute><ProfilePage /></PrivateRoute>} />
+            <Route path="/booking-history" element={<PrivateRoute><BookingHistoryPage /></PrivateRoute>} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </div>

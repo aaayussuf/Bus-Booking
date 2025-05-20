@@ -3,10 +3,10 @@ import styles from './SeatMap.module.css';
 
 const SeatMap = ({ onSeatSelect }) => {
   const seatLayout = [
-    { left: ['1A', '1B'], right: ['DRIVER'], isLabel: true },
+    { left: ['1A', '1B'], right: ['DRIVER'] },
     { left: ['2A', '2B'], right: ['2C', '2D'] },
     { left: ['3A', '3B'], right: ['3C', '3D'] },
-    { left: ['DOOR'], right: ['4C', '4D'], isLabel: true },
+    { left: ['DOOR'], right: ['4C', '4D'] },
     { left: ['5A', '5B'], right: ['5C', '5D'] },
     { left: ['6A', '6B'], right: ['6C', '6D'] },
     { left: ['7A', '7B'], right: ['7C', '7D'] },

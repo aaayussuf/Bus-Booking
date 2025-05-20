@@ -77,7 +77,7 @@ const HomePage = () => {
           }}
           onClick={handleBookNow}
         >
-          Book
+          Book Now
         </Button>
       </Box>
     </Box>

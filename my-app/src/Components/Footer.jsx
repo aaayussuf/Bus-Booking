@@ -9,7 +9,7 @@ const Footer = () => {
     <Box
       component="footer"
       sx={{
-        backgroundColor: '#004d40',
+        backgroundColor: '#003300',
         color: 'white',
         py: 6,
         mt: 'auto',
@@ -28,10 +28,12 @@ const Footer = () => {
         >
           <Box sx={{ maxWidth: 300 }}>
             <Typography variant="h6" gutterBottom>
-              Bus Booking System
+              Moyale Star More Than a Ride 
             </Typography>
             <Typography variant="body2" sx={{ opacity: 0.8 }}>
-              Your trusted partner for seamless bus ticket booking. Experience convenience and comfort with us.
+              We’re not just a bus company. We’re a movement of connection, comfort, and care.
+              Every route we take is powered by purpose to serve, to connect, to deliver.
+              ✨ Join thousands who ride with the Star and never look back.
             </Typography>
           </Box>
 
